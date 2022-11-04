@@ -1,0 +1,15 @@
+---
+- name: playbook_1
+  hosts: all
+  vars:
+   a: "Welcome to ansible"
+   b: "Welcome to Jenkins"
+  tasks:
+   - name: task_1
+     debug:
+         msg: "{{a}}"
+   - name: task_2
+     debug:
+         msg: "{{b}}"
+...
+
